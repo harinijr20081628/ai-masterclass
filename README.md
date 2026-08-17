@@ -32,3 +32,33 @@ A real-time motion detection system built using Python and OpenCV that identifie
 pip install opencv-python imutils
 python moving_object_detection.py
 \`\`\`
+## 😀 Face Detection
+
+A real-time face detection system built using Python and OpenCV's Haar Cascade classifier, detecting faces from a live camera feed.
+
+**Day:** 6 of AI Masterclass  
+**Status:** ✅ Completed
+
+### 🛠️ Tech Stack
+- Python
+- OpenCV
+
+### 📌 Concepts Covered
+- Haar Cascade Classifiers
+- Grayscale Conversion
+- Multi-Scale Detection
+- Bounding Box Visualization
+
+### ⚙️ How It Works
+1. Loads the pre-trained Haar Cascade face detection model
+2. Captures live video from the camera
+3. Converts each frame to grayscale (Haar Cascades work on grayscale images)
+4. Runs `detectMultiScale` to find face coordinates in the frame
+5. Draws bounding boxes around detected faces
+6. Exits when the `Esc` key is pressed
+
+### ▶️ Run It
+\`\`\`bash
+pip install opencv-python
+python face_detection.py
+\`\`\`
